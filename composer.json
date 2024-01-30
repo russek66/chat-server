@@ -1,0 +1,22 @@
+{
+    "name": "russek66/chat-server",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "russek66",
+            "email": "russek66@gmail.com"
+        }
+    ]
+}
