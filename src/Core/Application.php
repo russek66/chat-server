@@ -5,7 +5,12 @@ namespace App\Core;
 class Application
 {
 
-    public function run()
+    public function __construct(protected array $request)
     {
+    }
+
+    public function run(): void
+    {
+        (new Router())->resolveEndPoint(uri: $this->request['uri'], method: strtolower($this->request['method']));
     }
 }
