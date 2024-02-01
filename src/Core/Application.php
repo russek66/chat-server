@@ -26,8 +26,8 @@ class Application
 
     private function registerRoutes(): self
     {
-        $this->router->post('/', [APIController::class, "setMsg"]);
-        $this->router->get('/', [APIController::class, "getMsg"]);
+        $this->router->post('/', [APIController::class, "setNewMsg"]);
+        $this->router->get('/', [APIController::class, "getNewMsg"]);
 
         return $this;
     }
