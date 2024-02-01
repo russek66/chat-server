@@ -31,7 +31,7 @@ class Router
         return $this->routes;
     }
 
-    public function resolve(string $uri, string $method): void
+    public function resolve(string $uri, string $method, MessageDTO $mDTO): void
     {
 
         $url = trim($this->getRequest(key: 'url'), '/');
