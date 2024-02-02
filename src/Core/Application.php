@@ -2,6 +2,9 @@
 
 namespace App\Core;
 
+use App\Controller\Controller;
+use App\DTO\MessageDTO;
+
 class Application
 {
 
@@ -26,8 +29,8 @@ class Application
 
     private function registerRoutes(): self
     {
-        $this->router->post('/', [APIController::class, "setNewMsg"]);
-        $this->router->get('/', [APIController::class, "getNewMsg"]);
+        $this->router->post('/', [Controller::class, "setNewMsg"]);
+        $this->router->get('/', [Controller::class, "getNewMsg"]);
 
         return $this;
     }

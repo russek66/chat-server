@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use App\DTO\MessageDTO;
+
 class Router
 {
     private ?string $controllerName;

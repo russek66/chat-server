@@ -3,8 +3,8 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 use App\Core\Application;
-use App\Core\MessageDTO;
 use App\Core\Router;
+use App\DTO\MessageDTO;
 
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
